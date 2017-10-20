@@ -12,7 +12,7 @@ class parent{
 
 class child extends parent{
     constructor(){
-        console.log("My first webpack app updatedNO:5");
+        console.log("My first webpack app updatedNO:7");
         super();
     }
 }
