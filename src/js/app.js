@@ -1,24 +1,13 @@
-class parent{
-    constructor(){
-        console.log("parent constructor called");
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+
+
+export default class Sam extends Component {
+    render() {
+        return (
+            <div>I am the Component</div>
+        )
     }
-    add(a,b){
-        return a+b;
+};
 
-    }
-}
-
-
-
-class child extends parent{
-    constructor(){
-        console.log("My first webpack app updatedNO:7");
-        super();
-    }
-}
-
-
-
-
-let obj = new child();
-console.log(obj.add(1,2));
+render(<Sam />, document.getElementById('app'));
